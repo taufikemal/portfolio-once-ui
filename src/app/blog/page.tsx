@@ -1,5 +1,4 @@
 import { Flex, Heading } from '@/once-ui/components';
-import { Mailchimp } from '@/app/components';
 import { Posts } from '@/app/blog/components/Posts';
 
 import { blog, newsletter, person } from '@/app/resources'
@@ -71,9 +70,6 @@ export default function Blog() {
 				<Posts range={[1,3]}/>
 				<Posts range={[4]} columns="2"/>
 			</Flex>
-            {newsletter.display && (
-                <Mailchimp/>
-            )}
         </Flex>
     );
 }

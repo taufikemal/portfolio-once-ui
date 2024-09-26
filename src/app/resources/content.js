@@ -1,8 +1,8 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Taufik',
-    lastName:  'Kemal',
+    firstName: 'Taufik Kemal',
+    lastName:  'Thaha',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
@@ -39,7 +39,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'kemal.taufik14@gmail.com',
     },
 ]
 
@@ -69,16 +69,16 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>A passionate UI/UX Designer and Brand Designer with professional experience in the education community, payment, and transportation industries.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'PT Altech Omega Andalan',
+                timeframe: 'Feb 2024 - Present',
+                role: 'UI/UX Specialist',
                 achievements: [
                     <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
                     <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
@@ -93,7 +93,37 @@ const about = {
                 ]
             },
             {
-                company: 'Creativ3',
+                company: 'MengajiOnline.com',
+                timeframe: '2018 - 2022',
+                role: 'Lead Designer',
+                achievements: [
+                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
+                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'Kemendikbudristek',
+                timeframe: '2018 - 2022',
+                role: 'Lead Designer',
+                achievements: [
+                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
+                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'PT Aino Indonesia',
+                timeframe: '2018 - 2022',
+                role: 'Lead Designer',
+                achievements: [
+                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
+                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'Anak Teknik Indonesia',
                 timeframe: '2018 - 2022',
                 role: 'Lead Designer',
                 achievements: [
@@ -109,12 +139,18 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
-            },
-            {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Universitas Gadjah Mada',
+                description: 
+                <>
+                    Grade: CGPA : 3.78Grade: CGPA : 3.78 <br/>
+                    Activities and societies: <br/>
+                    • Creative Lead of Core Team @Google Developers Student Club UGM, <br/>
+                    • Head of Media and Information Division @Association of Software Engineering Technology Students SV UGM, <br/>
+                    • Head of Media and Information Division @Himpunan Mahasiswa Gadjah Mada Sulawesi Selatan <br/>
+                    • Staff of Media and Information @Badan Eksekutif Mahasiswa KM UGM, <br/>
+                    • Staff of Video Division @Pekan Ilmiah Mahasiswa Nasional (PIMNAS) 2020, <br/>
+                    • Staff of Media and Information Division @Mardliyyah Islamic Youth Center. <br/>
+                </>,
             }
         ]
     },
