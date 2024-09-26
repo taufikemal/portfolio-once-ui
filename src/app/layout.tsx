@@ -4,9 +4,11 @@ import classNames from 'classnames';
 import { Flex, Background } from '@/once-ui/components'
 import { Footer, Header, RouteGuard } from "@/app/components";
 import { baseURL, effects, home, person, style } from '@/app/resources'
-import { Manrope } from 'next/font/google'
 import { Source_Code_Pro } from 'next/font/google';
 import { Metadata } from "next";
+
+// Change global typeface
+import { Manrope } from 'next/font/google'
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://' + baseURL),
