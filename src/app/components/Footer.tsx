@@ -20,7 +20,7 @@ export const Footer = () => {
                         onBackground="neutral-weak">
                         © {currentYear} /
                     </Text>
-                    <Text paddingX="4">
+                    <Text paddingX="0">
                         {person.name}
                     </Text>
                     <Text onBackground="neutral-weak">
@@ -29,7 +29,7 @@ export const Footer = () => {
                     </Text>
                 </Text>
                 <Flex
-                    gap="16">
+                    gap="4">
                     {social.map((item) => (
                         item.link && (
                             <IconButton
@@ -37,7 +37,7 @@ export const Footer = () => {
                                 href={item.link}
                                 icon={item.icon}
                                 tooltip={item.name}
-                                size="s"
+                                size="l"
                                 variant="ghost"/>
                         )
                     ))}

@@ -22,9 +22,9 @@ const social = [
     // Links are automatically displayed.
     // Import new icons in /once-ui/icons.ts
     {
-        name: 'GitHub',
-        icon: 'github',
-        link: 'https://github.com/taufikemal',
+        name: 'Dribbble',
+        icon: 'dribbble',
+        link: 'https://dribbble.com/taufikemal_',
     },
     {
         name: 'LinkedIn',
@@ -32,15 +32,20 @@ const social = [
         link: 'https://www.linkedin.com/in/taufikemal',
     },
     {
-        name: 'X',
-        icon: 'x',
-        link: '',
+        name: 'GitHub',
+        icon: 'github',
+        link: 'https://github.com/taufikemal',
     },
     {
         name: 'Email',
         icon: 'email',
         link: 'kemal.taufik14@gmail.com',
     },
+    {
+        name: 'Website',
+        icon: 'website',
+        link: 'https://www.taufikemal.framer.ai',
+    }
 ]
 
 const home = {
@@ -69,7 +74,9 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>A passionate UI/UX Designer and Brand Designer with professional experience in the education community, payment, and transportation industries.</>
+        description: <>A passionate UI/UX Designer and Brand Designer with professional experiences such as payment, ticketing, e-commerce, B2C, B2B, transportation, and education community industries
+        I bring my expertise to logo design and the development of unified brand identities, collaborating with multiple organizations to shape and express their distinctive brand narratives<br/><br/>
+        In addition to my professional responsibilities, I am deeply dedicated to knowledge sharing. I take great satisfaction in imparting my experiences and insights to others through seminars and workshops. This commitment to education is an integral part of my professional journey, and I relish the opportunity to contribute to the growth and development of emerging designers.</>
     },
     work: {
         display: true, // set to false to hide this section
