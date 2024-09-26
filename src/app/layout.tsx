@@ -1,15 +1,11 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
-
 import classNames from 'classnames';
-
 import { Flex, Background } from '@/once-ui/components'
 import { Footer, Header, RouteGuard } from "@/app/components";
 import { baseURL, effects, home, person, style } from '@/app/resources'
-
-import { Inter } from 'next/font/google'
+import { Manrope } from 'next/font/google'
 import { Source_Code_Pro } from 'next/font/google';
-
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -37,7 +33,7 @@ export const metadata: Metadata = {
 	},
 }
 
-const primary = Inter({
+const primary = Manrope({
 	variable: '--font-primary',
 	subsets: ['latin'],
 	display: 'swap',
