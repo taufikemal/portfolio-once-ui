@@ -32,10 +32,10 @@ import {
 	FaDiscord,
 	FaDribbble,
 	FaGlobe,
-	FaGithub,
 	FaLinkedin,
 	FaMedium,
-	FaXTwitter
+	FaXTwitter,
+	FaInstagram
 } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
@@ -62,10 +62,10 @@ export const iconLibrary: Record<string, IconType> = {
 	home: PiHouseDuotone,
 	gallery: PiImageDuotone,
 	discord: FaDiscord,
-	github: FaGithub,
 	linkedin: FaLinkedin,
 	x: FaXTwitter,
 	dribbble: FaDribbble,
 	website: FaGlobe,
 	medium: FaMedium,
+	instagram: FaInstagram,
 };

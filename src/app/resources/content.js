@@ -32,9 +32,9 @@ const social = [
         link: 'https://www.linkedin.com/in/taufikemal',
     },
     {
-        name: 'GitHub',
-        icon: 'github',
-        link: 'https://github.com/taufikemal',
+        name: 'Instagram',
+        icon: 'instagram',
+        link: 'https://instagram.com/taufikemal_',
     },
     {
         name: 'Email',
