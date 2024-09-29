@@ -149,7 +149,7 @@ const about = {
                 name: 'Universitas Gadjah Mada',
                 description: 
                 <>
-                    Grade: CGPA : 3.78Grade: CGPA : 3.78 <br/>
+                    Grade: CGPA : 3.78<br/>
                     Activities and societies: <br/>
                     • Creative Lead of Core Team @Google Developers Student Club UGM, <br/>
                     • Head of Media and Information Division @Association of Software Engineering Technology Students SV UGM, <br/>
@@ -184,7 +184,19 @@ const about = {
                 ]
             },
             {
-                title: 'Next.js',
+                title: 'Framer',
+                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-04.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                title: 'Brand and Logo Design',
                 description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
                 images: [
                     {
