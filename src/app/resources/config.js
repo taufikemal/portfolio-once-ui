@@ -23,7 +23,7 @@ const effects = {
 const style = {
     theme:       'light',         // dark | light
     neutral:     'slate',         // sand | gray | slate
-    brand:       'yellow',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    brand:       'indigo',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     accent:      'magenta',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     solid:       'contrast',     // color | contrast
     solidStyle:  'flat',         // flat | plastic
