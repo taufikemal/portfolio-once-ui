@@ -16,7 +16,6 @@ type TimeDisplayProps = {
 
 const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' }) => {
     const [currentTime, setCurrentTime] = useState('');
-
     useEffect(() => {
         const updateTime = () => {
             const now = new Date();

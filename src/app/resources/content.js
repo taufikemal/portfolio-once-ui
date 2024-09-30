@@ -227,8 +227,7 @@ const work = {
     // All projects will be listed on the /home and /work routes
 }
 
-/* Disable Gallery */
-/* const gallery = {
+const gallery = {
     label: 'Gallery',
     title: 'My photo gallery',
     description: `A photo collection by ${person.name}`,
@@ -305,6 +304,6 @@ const work = {
             orientation: 'horizontal'
         },
     ]
-}*/
+}
 
 export { person, social, newsletter, home, about, blog, work, gallery };
