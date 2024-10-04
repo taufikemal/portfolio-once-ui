@@ -1,7 +1,8 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
 import classNames from 'classnames';
-import { Flex, Background } from '@/once-ui/components'
+import { Flex, Background, Switch } from '@/once-ui/components'
+import { Providers } from "./providers";
 import { Footer, Header, RouteGuard } from "@/app/components";
 import { baseURL, effects, home, person, style } from '@/app/resources'
 import { Source_Code_Pro } from 'next/font/google';
