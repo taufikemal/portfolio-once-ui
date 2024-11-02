@@ -2,7 +2,6 @@ import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
 import classNames from 'classnames';
 import { Flex, Background, Switch } from '@/once-ui/components'
-import { Providers } from "./providers";
 import { Footer, Header, RouteGuard } from "@/app/components";
 import { baseURL, effects, home, person, style } from '@/app/resources'
 import { Source_Code_Pro } from 'next/font/google';
@@ -66,7 +65,7 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children } : RootLayoutProps) {
-	return (
+	return (		
 		<Flex
 			as="html" lang="en"
 			background="page"
@@ -81,6 +80,7 @@ export default function RootLayout({ children } : RootLayoutProps) {
 				secondary ? secondary.variable : '',
 				tertiary ? tertiary.variable : '',
 				code.variable)}>
+
 			<Flex style={{minHeight: '100vh'}}
 				as="body"
 				fillWidth margin="0" padding="0"

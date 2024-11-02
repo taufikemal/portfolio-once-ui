@@ -3,11 +3,12 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { Flex, ToggleButton } from "@/once-ui/components"
+import { Flex, ToggleButton, Switch } from "@/once-ui/components"
 import styles from '@/app/components/Header.module.scss'
 
 import { routes, display } from '@/app/resources'
 import { person, home, about, blog, work, gallery } from '@/app/resources'
+import ThemeSwitcher from "./ThemeSwitcher";
 
 type TimeDisplayProps = {
     timeZone: string;
@@ -47,6 +48,10 @@ export default TimeDisplay;
 
 export const Header = () => {
     const pathname = usePathname() ?? '';
+
+    function y(): void {
+        throw new Error("Function not implemented.");
+    }
 
     return (
         <Flex style={{height: 'fit-content'}}
@@ -113,14 +118,32 @@ export const Header = () => {
                     )}
                 </Flex>
             </Flex>
+
+            {/* Right Section */}
             <Flex
+                fillWidth
                 hide="s"
-                paddingRight="12" fillWidth
-                justifyContent="flex-end" alignItems="center"
+                paddingRight="12"
+                justifyContent="flex-end" 
+                alignItems="center"
                 textVariant="body-default-s">
+
+                {/* Time Display Clock */}
                 { display.time && (
                     <TimeDisplay timeZone={person.location}/>
                 )}
+
+                {/* Need Struggle How to Fix This huhuhuhu :")" */}
+                {/* <Switch
+                reverse
+                isChecked
+                onToggle={ThemeSwitcher}
+                iconButtonProps={{
+                    onClick: useState,
+                    tooltip: 'Learn more',
+                    tooltipPosition: 'bottom'
+                }}
+                /> */}
             </Flex>
         </Flex>
     )
