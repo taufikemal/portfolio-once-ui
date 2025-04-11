@@ -44,7 +44,7 @@ const social = [
     {
         name: 'Website',
         icon: 'website',
-        link: 'https://www.taufikemal.framer.ai',
+        link: 'https://www.taufikemal.framer.website',
     }
 ]
 
