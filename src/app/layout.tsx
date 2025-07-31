@@ -9,6 +9,18 @@ import { Metadata } from "next";
 
 // Change global typeface
 import { Manrope } from 'next/font/google'
+import { ThemeProvider, useTheme } from "next-themes";
+import { useEffect } from "react";
+import StylingContainer from "./components/StylingContainer";
+
+
+/*
+	Replace with code for secondary and tertiary fonts
+	from https://once-ui.com/customize
+*/
+/*
+*/
+
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://' + baseURL),
@@ -34,53 +46,16 @@ export const metadata: Metadata = {
 		},
 	},
 }
-
-const primary = Manrope({
-	variable: '--font-primary',
-	subsets: ['latin'],
-	display: 'swap',
-})
-
-type FontConfig = {
-    variable: string;
-};
-
-/*
-	Replace with code for secondary and tertiary fonts
-	from https://once-ui.com/customize
-*/
-const secondary: FontConfig | undefined = undefined;
-const tertiary: FontConfig | undefined = undefined;
-/*
-*/
-
-const code = Source_Code_Pro({
-	variable: '--font-code',
-	subsets: ['latin'],
-	display: 'swap',
-});
-
 interface RootLayoutProps {
 	children: React.ReactNode;
 }
 
-export default function RootLayout({ children } : RootLayoutProps) {
-	return (		
-		<Flex
-			as="html" lang="en"
-			background="page"
-			data-neutral={style.neutral} data-brand={style.brand} data-accent={style.accent}
-			data-solid={style.solid} data-solid-style={style.solidStyle}
-			data-theme={style.theme}
-			data-border={style.border}
-			data-surface={style.surface}
-			data-transition={style.transition}
-			className={classNames(
-				primary.variable,
-				secondary ? secondary.variable : '',
-				tertiary ? tertiary.variable : '',
-				code.variable)}>
 
+export default function RootLayout({ children } : RootLayoutProps) {
+	return (	
+		<RouteGuard>
+			<ThemeProvider>
+			<StylingContainer>
 			<Flex style={{minHeight: '100vh'}}
 				as="body"
 				fillWidth margin="0" padding="0"
@@ -101,13 +76,14 @@ export default function RootLayout({ children } : RootLayoutProps) {
 					<Flex
 						justifyContent="center"
 						fillWidth minHeight="0">
-						<RouteGuard>
+						
 							{children}
-						</RouteGuard>
 					</Flex>
 				</Flex>
 				<Footer/>
 			</Flex>
-		</Flex>
+			</StylingContainer>		
+		</ThemeProvider>
+		</RouteGuard>
 	);
 }

@@ -59,10 +59,10 @@ export const Header = () => {
             as="header"
             zIndex={9}
             fillWidth padding="8"
-            justifyContent="center">
+            justifyContent="space-between">
             <Flex
                 hide="s"
-                paddingLeft="12" fillWidth
+                paddingLeft="12"
                 alignItems="center"
                 textVariant="body-default-s">
                 { display.location && (
@@ -121,29 +121,15 @@ export const Header = () => {
 
             {/* Right Section */}
             <Flex
-                fillWidth
                 hide="s"
                 paddingRight="12"
                 justifyContent="flex-end" 
                 alignItems="center"
                 textVariant="body-default-s">
 
-                {/* Time Display Clock */}
-                { display.time && (
-                    <TimeDisplay timeZone={person.location}/>
-                )}
 
                 {/* Need Struggle How to Fix This huhuhuhu :")" */}
-                {/* <Switch
-                reverse
-                isChecked
-                onToggle={ThemeSwitcher}
-                iconButtonProps={{
-                    onClick: useState,
-                    tooltip: 'Learn more',
-                    tooltipPosition: 'bottom'
-                }}
-                /> */}
+                <ThemeSwitcher />
             </Flex>
         </Flex>
     )
